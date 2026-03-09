@@ -50,7 +50,11 @@
         inset: 0;
         background-image:
           linear-gradient(rgba(255, 255, 255, 0.028) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(255, 255, 255, 0.028) 1px, transparent 1px);
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.028) 1px,
+            transparent 1px
+          );
         background-size: 48px 48px;
         opacity: 0.28;
         pointer-events: none;
@@ -562,27 +566,39 @@
       }
 
       .slide.active .fade > *:nth-child(1) {
-        transition: opacity 180ms ease-out 30ms, transform 180ms ease-out 30ms;
+        transition:
+          opacity 180ms ease-out 30ms,
+          transform 180ms ease-out 30ms;
       }
 
       .slide.active .fade > *:nth-child(2) {
-        transition: opacity 180ms ease-out 60ms, transform 180ms ease-out 60ms;
+        transition:
+          opacity 180ms ease-out 60ms,
+          transform 180ms ease-out 60ms;
       }
 
       .slide.active .fade > *:nth-child(3) {
-        transition: opacity 180ms ease-out 90ms, transform 180ms ease-out 90ms;
+        transition:
+          opacity 180ms ease-out 90ms,
+          transform 180ms ease-out 90ms;
       }
 
       .slide.active .fade > *:nth-child(4) {
-        transition: opacity 180ms ease-out 120ms, transform 180ms ease-out 120ms;
+        transition:
+          opacity 180ms ease-out 120ms,
+          transform 180ms ease-out 120ms;
       }
 
       .slide.active .fade > *:nth-child(5) {
-        transition: opacity 180ms ease-out 150ms, transform 180ms ease-out 150ms;
+        transition:
+          opacity 180ms ease-out 150ms,
+          transform 180ms ease-out 150ms;
       }
 
       .slide.active .fade > *:nth-child(6) {
-        transition: opacity 180ms ease-out 180ms, transform 180ms ease-out 180ms;
+        transition:
+          opacity 180ms ease-out 180ms,
+          transform 180ms ease-out 180ms;
       }
 
       @media (max-width: 1050px) {
@@ -618,7 +634,7 @@
         <section class="slide active title-slide" data-slide="1">
           <div class="frame">
             <div class="eyebrow">Monday interview presentation</div>
-            <div class="slide-index">01 / 16</div>
+            <div class="slide-index">01 / 18</div>
           </div>
           <div class="content content-center fade">
             <div class="section-rule rule-bolt"></div>
@@ -633,7 +649,10 @@
                 DocSmith: find the story
               </div>
               <div class="act-marker">
-                <span class="act-swatch" style="background: var(--offer)"></span>
+                <span
+                  class="act-swatch"
+                  style="background: var(--offer)"
+                ></span>
                 OfferUp: build the machine
               </div>
               <div class="act-marker">
@@ -660,7 +679,7 @@
         <section class="slide" data-slide="2">
           <div class="frame">
             <div class="eyebrow">The thesis</div>
-            <div class="slide-index">02 / 16</div>
+            <div class="slide-index">02 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
@@ -671,8 +690,8 @@
                 <h3>Find the constraint.</h3>
                 <p class="lede small" style="margin-top: 10px">
                   Is the problem positioning, proof, instrumentation, sales
-                  alignment, or channel selection? Until that is clear, speed
-                  is mostly noise.
+                  alignment, or channel selection? Until that is clear, speed is
+                  mostly noise.
                 </p>
               </div>
               <div class="panel">
@@ -704,18 +723,23 @@
             </div>
           </div>
           <div class="footer">
-            <div class="footer-note">The goal is not to cover everything I researched. It is to show judgment.</div>
+            <div class="footer-note">
+              The goal is not to cover everything I researched. It is to show
+              judgment.
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="3">
           <div class="frame">
             <div class="eyebrow accent-doc">Act 1 / DocSmith</div>
-            <div class="slide-index">03 / 16</div>
+            <div class="slide-index">03 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-doc"></div>
-            <h2>DocSmith: the product kept changing. The story had to catch up.</h2>
+            <h2>
+              DocSmith: the product kept changing. The story had to catch up.
+            </h2>
             <p class="lede">
               The constraint was not demand generation. The constraint was that
               the market did not know what problem we truly solved yet.
@@ -729,7 +753,9 @@
               <div class="proof">
                 <div class="micro">Early mistake</div>
                 <div class="number accent-warn">1</div>
-                <p>commodity framing that trapped the buyer in engineering only</p>
+                <p>
+                  commodity framing that trapped the buyer in engineering only
+                </p>
               </div>
               <div class="proof">
                 <div class="micro">Operating shift</div>
@@ -739,7 +765,10 @@
               <div class="proof">
                 <div class="micro">Result</div>
                 <div class="number accent-doc">1</div>
-                <p>narrative that scaled from startup pitch to enterprise conversation</p>
+                <p>
+                  narrative that scaled from startup pitch to enterprise
+                  conversation
+                </p>
               </div>
             </div>
             <p class="quote" style="border-left-color: var(--doc)">
@@ -755,7 +784,7 @@
         <section class="slide" data-slide="4">
           <div class="frame">
             <div class="eyebrow accent-doc">Act 1 / Positioning arc</div>
-            <div class="slide-index">04 / 16</div>
+            <div class="slide-index">04 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-doc"></div>
@@ -781,7 +810,9 @@
               </div>
               <div class="panel">
                 <div class="stage-tag">V3</div>
-                <h3 class="good">"Every business has a Knowledge Fabric. Yours is broken."</h3>
+                <h3 class="good">
+                  "Every business has a Knowledge Fabric. Yours is broken."
+                </h3>
                 <ul class="list list-doc" style="margin-top: 14px">
                   <li>Moved from output to system truth</li>
                   <li>Worked with devs, execs, and enterprise partners</li>
@@ -791,38 +822,50 @@
             </div>
             <p class="quote" style="border-left-color: var(--doc)">
               The lesson I carried forward: when the category is still forming,
-              the marketer has to discover the right abstraction layer, not
-              just write better copy.
+              the marketer has to discover the right abstraction layer, not just
+              write better copy.
             </p>
           </div>
           <div class="footer">
-            <div class="footer-note">Best signal phrase: "drift is a silent tax."</div>
+            <div class="footer-note">
+              Best signal phrase: "drift is a silent tax."
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="5">
           <div class="frame">
             <div class="eyebrow accent-doc">Act 1 / Proof loop</div>
-            <div class="slide-index">05 / 16</div>
+            <div class="slide-index">05 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-doc"></div>
-            <h2>Once the story clicked, the product itself became the channel.</h2>
+            <h2>
+              Once the story clicked, the product itself became the channel.
+            </h2>
             <div class="three-up" style="margin-top: 24px">
               <div class="kpi">
                 <div class="metric-label">SEO engine</div>
                 <div class="kpi-value accent-doc">1.01M</div>
-                <p class="kpi-copy">impressions driven by a showcase-content loop generated from the product itself</p>
+                <p class="kpi-copy">
+                  impressions driven by a showcase-content loop generated from
+                  the product itself
+                </p>
               </div>
               <div class="kpi">
                 <div class="metric-label">Demand proof</div>
                 <div class="kpi-value accent-doc">3.74K</div>
-                <p class="kpi-copy">search clicks once the content engine started compounding</p>
+                <p class="kpi-copy">
+                  search clicks once the content engine started compounding
+                </p>
               </div>
               <div class="kpi">
                 <div class="metric-label">Enterprise close motion</div>
                 <div class="kpi-value accent-doc">$40K-$216K</div>
-                <p class="kpi-copy">annual savings range quantified in a POC scorecard that helped close deals</p>
+                <p class="kpi-copy">
+                  annual savings range quantified in a POC scorecard that helped
+                  close deals
+                </p>
               </div>
             </div>
             <div class="split-grid" style="margin-top: 20px">
@@ -831,28 +874,41 @@
                 <ul class="list list-doc" style="margin-top: 14px">
                   <li>Message matched buyer stakes, not product mechanics</li>
                   <li>Content was proof, not filler</li>
-                  <li>Dual-audience framing kept technical and executive buyers aligned</li>
+                  <li>
+                    Dual-audience framing kept technical and executive buyers
+                    aligned
+                  </li>
                 </ul>
               </div>
               <div class="panel">
                 <h3>Why it matters for Boltline</h3>
                 <ul class="list list-bolt" style="margin-top: 14px">
-                  <li>Boltline already has real product truth and credible customer outcomes</li>
-                  <li>The marketing job is to package and distribute that truth</li>
-                  <li>This is a proof-led category-building motion, not a content volume contest</li>
+                  <li>
+                    Boltline already has real product truth and credible
+                    customer outcomes
+                  </li>
+                  <li>
+                    The marketing job is to package and distribute that truth
+                  </li>
+                  <li>
+                    This is a proof-led category-building motion, not a content
+                    volume contest
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="footer">
-            <div class="chip">Act 1 takeaway: get the story right, then let proof compound</div>
+            <div class="chip">
+              Act 1 takeaway: get the story right, then let proof compound
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="6">
           <div class="frame">
             <div class="eyebrow accent-offer">Act 2 / OfferUp</div>
-            <div class="slide-index">06 / 16</div>
+            <div class="slide-index">06 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-offer"></div>
@@ -865,22 +921,34 @@
               <div class="proof">
                 <div class="micro">Lead volume</div>
                 <div class="number accent-warn">37</div>
-                <p>total leads entering a sales team that already had scale pressure</p>
+                <p>
+                  total leads entering a sales team that already had scale
+                  pressure
+                </p>
               </div>
               <div class="proof">
                 <div class="micro">Sales reality</div>
                 <div class="number">120</div>
-                <p>reps, each compensating for missing marketing systems in their own way</p>
+                <p>
+                  reps, each compensating for missing marketing systems in their
+                  own way
+                </p>
               </div>
               <div class="proof">
                 <div class="micro">Missing pieces</div>
                 <div class="number accent-warn">0</div>
-                <p>attribution, conversion paths, nurture, consistent assets, reporting rhythm</p>
+                <p>
+                  attribution, conversion paths, nurture, consistent assets,
+                  reporting rhythm
+                </p>
               </div>
               <div class="proof">
                 <div class="micro">Interpretation</div>
                 <div class="number accent-offer">1</div>
-                <p>clear mandate: build the machine before asking anyone to trust the output</p>
+                <p>
+                  clear mandate: build the machine before asking anyone to trust
+                  the output
+                </p>
               </div>
             </div>
             <p class="quote" style="border-left-color: var(--offer)">
@@ -896,7 +964,7 @@
         <section class="slide" data-slide="7">
           <div class="frame">
             <div class="eyebrow accent-offer">Act 2 / First move</div>
-            <div class="slide-index">07 / 16</div>
+            <div class="slide-index">07 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-offer"></div>
@@ -914,7 +982,9 @@
               </div>
               <div class="panel">
                 <div class="stage-tag">Why first</div>
-                <h3>Because opinion loses power when the scoreboard is trusted.</h3>
+                <h3>
+                  Because opinion loses power when the scoreboard is trusted.
+                </h3>
                 <p class="lede small" style="margin-top: 14px">
                   Once the source architecture existed, future launches,
                   reporting, and budget discussions stopped being debates.
@@ -931,14 +1001,16 @@
             </p>
           </div>
           <div class="footer">
-            <div class="chip">This is the exact instinct I would bring to Boltline</div>
+            <div class="chip">
+              This is the exact instinct I would bring to Boltline
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="8">
           <div class="frame">
             <div class="eyebrow accent-offer">Act 2 / Build order</div>
-            <div class="slide-index">08 / 16</div>
+            <div class="slide-index">08 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-offer"></div>
@@ -986,19 +1058,23 @@
               <div class="kpi">
                 <div class="metric-label">Quality</div>
                 <div class="kpi-value accent-offer">4:1</div>
-                <p class="kpi-copy">MQL-to-opportunity ratio, improved from 8:1</p>
+                <p class="kpi-copy">
+                  MQL-to-opportunity ratio, improved from 8:1
+                </p>
               </div>
             </div>
           </div>
           <div class="footer">
-            <div class="chip">Act 2 takeaway: build the machine in the right order</div>
+            <div class="chip">
+              Act 2 takeaway: build the machine in the right order
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="9">
           <div class="frame">
             <div class="eyebrow accent-offer">Acts 1 + 2 / Synthesis</div>
-            <div class="slide-index">09 / 16</div>
+            <div class="slide-index">09 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-offer"></div>
@@ -1010,7 +1086,10 @@
                   The market needed a stronger abstraction and a narrative that
                   made the product legible.
                 </p>
-                <p class="callout" style="margin-top: 16px; border-left-color: var(--doc)">
+                <p
+                  class="callout"
+                  style="margin-top: 16px; border-left-color: var(--doc)"
+                >
                   My job was to find the story buyers could organize around.
                 </p>
               </div>
@@ -1020,7 +1099,10 @@
                   The business needed measurement, process, and discipline
                   before additional spend or channel scale.
                 </p>
-                <p class="callout" style="margin-top: 16px; border-left-color: var(--offer)">
+                <p
+                  class="callout"
+                  style="margin-top: 16px; border-left-color: var(--offer)"
+                >
                   My job was to build the machine leaders could trust.
                 </p>
               </div>
@@ -1038,14 +1120,16 @@
             </div>
           </div>
           <div class="footer">
-            <div class="footer-note">This is the bridge into the Boltline section.</div>
+            <div class="footer-note">
+              This is the bridge into the Boltline section.
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="10">
           <div class="frame">
             <div class="eyebrow accent-bolt">Act 3 / Boltline</div>
-            <div class="slide-index">10 / 16</div>
+            <div class="slide-index">10 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
@@ -1059,17 +1143,24 @@
               <div class="kpi">
                 <div class="metric-label">Customer proof</div>
                 <div class="kpi-value accent-bolt">$6M</div>
-                <p class="kpi-copy">claimed annual savings at Intuitive Machines</p>
+                <p class="kpi-copy">
+                  claimed annual savings at Intuitive Machines
+                </p>
               </div>
               <div class="kpi">
                 <div class="metric-label">Operational proof</div>
                 <div class="kpi-value accent-bolt">99.9%</div>
-                <p class="kpi-copy">claimed inventory count accuracy at ispace-US</p>
+                <p class="kpi-copy">
+                  claimed inventory count accuracy at ispace-US
+                </p>
               </div>
               <div class="kpi">
                 <div class="metric-label">Story proof</div>
                 <div class="kpi-value accent-bolt">Built in rockets</div>
-                <p class="kpi-copy">a much stronger origin than generic "digital transformation" language</p>
+                <p class="kpi-copy">
+                  a much stronger origin than generic "digital transformation"
+                  language
+                </p>
               </div>
             </div>
             <p class="quote" style="border-left-color: var(--bolt)">
@@ -1086,7 +1177,7 @@
         <section class="slide" data-slide="11">
           <div class="frame">
             <div class="eyebrow accent-bolt">Act 3 / The market</div>
-            <div class="slide-index">11 / 16</div>
+            <div class="slide-index">11 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
@@ -1106,7 +1197,9 @@
                 <h3>Legacy stack and incumbents</h3>
                 <ul class="list list-bolt" style="margin-top: 14px">
                   <li>Lead with coexistence, not rip-and-replace theater</li>
-                  <li>Translate product value into implementation confidence</li>
+                  <li>
+                    Translate product value into implementation confidence
+                  </li>
                   <li>Arm Sales with integration and objection assets</li>
                 </ul>
               </div>
@@ -1115,7 +1208,9 @@
                 <h3>Status quo chaos</h3>
                 <ul class="list list-bolt" style="margin-top: 14px">
                   <li>Spreadsheets, scripts, disconnected tools</li>
-                  <li>Best wedge is operational pain plus proof of time-to-value</li>
+                  <li>
+                    Best wedge is operational pain plus proof of time-to-value
+                  </li>
                   <li>Show the cost of drift, rework, and audit friction</li>
                 </ul>
               </div>
@@ -1129,14 +1224,16 @@
             </div>
           </div>
           <div class="footer">
-            <div class="footer-note">This is where the research changes from observation into action.</div>
+            <div class="footer-note">
+              This is where the research changes from observation into action.
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="12">
           <div class="frame">
             <div class="eyebrow accent-bolt">Act 3 / Go-to-market view</div>
-            <div class="slide-index">12 / 16</div>
+            <div class="slide-index">12 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
@@ -1147,8 +1244,13 @@
                 <h3>One category sentence. Three persona cuts.</h3>
                 <ul class="list list-bolt" style="margin-top: 14px">
                   <li>Engineering leader: design-to-build continuity</li>
-                  <li>Ops and supply chain: traceability and execution control</li>
-                  <li>Executive buyer: lower risk, faster scale, clearer time-to-value</li>
+                  <li>
+                    Ops and supply chain: traceability and execution control
+                  </li>
+                  <li>
+                    Executive buyer: lower risk, faster scale, clearer
+                    time-to-value
+                  </li>
                 </ul>
               </div>
               <div class="panel">
@@ -1157,7 +1259,9 @@
                 <ul class="list list-bolt" style="margin-top: 14px">
                   <li>Customer stories broken into reusable proof modules</li>
                   <li>Comparison guide, ROI worksheet, implementation brief</li>
-                  <li>Sales-ready objection handling for coexistence and migration</li>
+                  <li>
+                    Sales-ready objection handling for coexistence and migration
+                  </li>
                 </ul>
               </div>
               <div class="panel">
@@ -1177,26 +1281,97 @@
             </p>
           </div>
           <div class="footer">
-            <div class="chip">This is proof-led demand gen, not generic "brand awareness"</div>
+            <div class="chip">
+              This is proof-led demand gen, not generic "brand awareness"
+            </div>
           </div>
         </section>
 
         <section class="slide" data-slide="13">
           <div class="frame">
-            <div class="eyebrow accent-bolt">Act 3 / A specific example</div>
-            <div class="slide-index">13 / 16</div>
+            <div class="eyebrow accent-bolt">Act 3 / I built a prototype</div>
+            <div class="slide-index">13 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
-            <h2>One example of how I would think: targeted hard-tech outreach.</h2>
+            <h2>I did not just describe the system. I built it.</h2>
+            <p class="lede">
+              As part of my research, I created a working prototype of what
+              Boltline's first industry page could look like — Space &amp;
+              Defense, with four layers of content depth.
+            </p>
+            <div class="timeline" style="margin-top: 24px">
+              <div class="panel">
+                <div class="stage-tag">Layer 1</div>
+                <h3>Industry hero</h3>
+                <p class="lede small" style="margin-top: 10px">
+                  Pain-specific headline, three proof stats, origin credibility.
+                  Speaks to the buyer's operating reality, not generic
+                  transformation language.
+                </p>
+              </div>
+              <div class="panel">
+                <div class="stage-tag">Layer 2</div>
+                <h3>Use case cards</h3>
+                <p class="lede small" style="margin-top: 10px">
+                  Four use cases with explicit pain statements: traceability,
+                  configuration management, compliance, multi-site execution.
+                </p>
+              </div>
+              <div class="panel">
+                <div class="stage-tag">Layer 3</div>
+                <h3>Workflow deep dive</h3>
+                <p class="lede small" style="margin-top: 10px">
+                  Full 5-step workflow for design-to-build traceability, outcome
+                  metrics, and persona-specific value by role.
+                </p>
+              </div>
+              <div class="panel">
+                <div class="stage-tag">Layer 4</div>
+                <h3>Customer proof + CTA</h3>
+                <p class="lede small" style="margin-top: 10px">
+                  Intuitive Machines and ispace-US results packaged as
+                  campaign-ready proof modules with conversion path.
+                </p>
+              </div>
+            </div>
+            <p class="quote" style="border-left-color: var(--bolt)">
+              Today, boltline.com goes one layer deep. This shows what it looks
+              like when you package existing proof into a real buyer journey.
+              This is how I work — fast iteration, real output.
+            </p>
+          </div>
+          <div class="footer">
+            <div class="chip">Live prototype built during interview prep</div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="14">
+          <div class="frame">
+            <div class="eyebrow accent-bolt">Act 3 / A specific example</div>
+            <div class="slide-index">14 / 18</div>
+          </div>
+          <div class="content fade">
+            <div class="section-rule rule-bolt"></div>
+            <h2>
+              One example of how I would think: targeted hard-tech outreach.
+            </h2>
             <div class="split-grid" style="margin-top: 24px">
               <div class="panel">
                 <div class="stage-tag">Why it is interesting</div>
-                <h3>SpaceX diaspora is a useful wedge, not the whole strategy.</h3>
+                <h3>
+                  SpaceX diaspora is a useful wedge, not the whole strategy.
+                </h3>
                 <ul class="list list-bolt" style="margin-top: 14px">
                   <li>Shared operating context makes the story land faster</li>
-                  <li>Signals like funding, hiring, and production ramp create urgency</li>
-                  <li>It proves I am thinking in ICP-specific motions, not channel generalities</li>
+                  <li>
+                    Signals like funding, hiring, and production ramp create
+                    urgency
+                  </li>
+                  <li>
+                    It proves I am thinking in ICP-specific motions, not channel
+                    generalities
+                  </li>
                 </ul>
               </div>
               <div class="panel">
@@ -1204,25 +1379,111 @@
                 <h3>Good example. Bad headline.</h3>
                 <ul class="list list-warn" style="margin-top: 14px">
                   <li>Too central, it narrows Boltline back to aerospace</li>
-                  <li>The core strategy still has to support multiple verticals</li>
-                  <li>I would use it as one sharp test case inside a broader system</li>
+                  <li>
+                    The core strategy still has to support multiple verticals
+                  </li>
+                  <li>
+                    I would use it as one sharp test case inside a broader
+                    system
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="panel" style="margin-top: 18px">
               <div class="stage-tag">What this slide is proving</div>
-              <h3>I do not just ideate campaigns. I choose wedges that fit the category story.</h3>
+              <h3>
+                I do not just ideate campaigns. I choose wedges that fit the
+                category story.
+              </h3>
             </div>
           </div>
           <div class="footer">
-            <div class="footer-note">The presentation stays broad; the targeting example shows depth without taking over the room.</div>
+            <div class="footer-note">
+              The presentation stays broad; the targeting example shows depth
+              without taking over the room.
+            </div>
           </div>
         </section>
 
-        <section class="slide" data-slide="14">
+        <section class="slide" data-slide="15">
+          <div class="frame">
+            <div class="eyebrow accent-bolt">Act 3 / How I execute</div>
+            <div class="slide-index">15 / 18</div>
+          </div>
+          <div class="content fade">
+            <div class="section-rule rule-bolt"></div>
+            <h2>The difference is learning velocity, not campaign volume.</h2>
+            <p class="lede">
+              Most marketing teams run 20-30 experiments a year. The system I
+              build runs that in a week. Same loop everywhere: modify one
+              variable, deploy, measure, keep or discard, repeat.
+            </p>
+            <div class="timeline" style="margin-top: 24px">
+              <div class="panel">
+                <div class="stage-tag">The loop</div>
+                <h3>One pattern across every channel.</h3>
+                <ul class="list list-bolt" style="margin-top: 14px">
+                  <li>
+                    Outbound: test subject, opener, CTA — score in 72 hours
+                  </li>
+                  <li>Ad creative and landing pages — score in 7-14 days</li>
+                  <li>Sales assets and onboarding — score in 30-90 days</li>
+                </ul>
+              </div>
+              <div class="panel">
+                <div class="stage-tag">The compound effect</div>
+                <h3>Each experiment makes every channel smarter.</h3>
+                <ul class="list list-bolt" style="margin-top: 14px">
+                  <li>Outreach learns which pain framing gets replies</li>
+                  <li>
+                    That language feeds ad copy, call scripts, and content
+                  </li>
+                  <li>
+                    The system builds a proprietary map of what resonates with
+                    Boltline's ICP
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="three-up" style="margin-top: 18px">
+              <div class="kpi">
+                <div class="metric-label">Traditional pace</div>
+                <div class="kpi-value accent-warn">~30/yr</div>
+                <p class="kpi-copy">experiments per year at most teams</p>
+              </div>
+              <div class="kpi">
+                <div class="metric-label">With autonomous loops</div>
+                <div class="kpi-value accent-bolt">2,000+/yr</div>
+                <p class="kpi-copy">
+                  continuous testing across every growth surface
+                </p>
+              </div>
+              <div class="kpi">
+                <div class="metric-label">The real moat</div>
+                <div class="kpi-value accent-bolt">The graph</div>
+                <p class="kpi-copy">
+                  experiment history is proprietary — competitors can't copy
+                  what they never ran
+                </p>
+              </div>
+            </div>
+            <p class="quote" style="border-left-color: var(--bolt)">
+              AI models will become commodities. The moat is the experiment
+              history — a system that has run thousands of tests against your
+              specific ICP and knows what works.
+            </p>
+          </div>
+          <div class="footer">
+            <div class="chip">
+              Optimize learning velocity, not campaign count
+            </div>
+          </div>
+        </section>
+
+        <section class="slide" data-slide="16">
           <div class="frame">
             <div class="eyebrow accent-bolt">Act 3 / First 30 days</div>
-            <div class="slide-index">14 / 16</div>
+            <div class="slide-index">16 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
@@ -1232,25 +1493,44 @@
                 <div class="stage-tag">Five conversations</div>
                 <ul class="list list-bolt" style="margin-top: 14px">
                   <li>Sales: objections, stalls, and where deals wobble</li>
-                  <li>Customer success: what customers praise and where implementation friction lives</li>
-                  <li>Product: what is shipping, what is not, and what deserves the spotlight</li>
-                  <li>Leadership: the real definition of success in quarter one</li>
-                  <li>At least one customer: why they bought and what nearly stopped them</li>
+                  <li>
+                    Customer success: what customers praise and where
+                    implementation friction lives
+                  </li>
+                  <li>
+                    Product: what is shipping, what is not, and what deserves
+                    the spotlight
+                  </li>
+                  <li>
+                    Leadership: the real definition of success in quarter one
+                  </li>
+                  <li>
+                    At least one customer: why they bought and what nearly
+                    stopped them
+                  </li>
                 </ul>
               </div>
               <div class="arrow"></div>
               <div class="panel">
                 <div class="stage-tag">Three decisions</div>
                 <ul class="list list-bolt" style="margin-top: 14px">
-                  <li>The category sentence and the top three message pillars</li>
+                  <li>
+                    The category sentence and the top three message pillars
+                  </li>
                   <li>The first proof asset worth turning into a campaign</li>
-                  <li>The measurement model Sales and Marketing will trust together</li>
+                  <li>
+                    The measurement model Sales and Marketing will trust
+                    together
+                  </li>
                 </ul>
               </div>
             </div>
             <div class="panel" style="margin-top: 18px">
               <div class="stage-tag">What ships by day 30</div>
-              <h3>One landing page, one sales-ready asset, one outbound or mid-funnel motion, one dashboard.</h3>
+              <h3>
+                One landing page, one sales-ready asset, one outbound or
+                mid-funnel motion, one dashboard.
+              </h3>
               <p class="lede small" style="margin-top: 10px">
                 Enough to learn from real buyer behavior without pretending the
                 entire engine is finished.
@@ -1258,14 +1538,16 @@
             </div>
           </div>
           <div class="footer">
-            <div class="chip">First 30 days = clarity plus one measurable loop</div>
+            <div class="chip">
+              First 30 days = clarity plus one measurable loop
+            </div>
           </div>
         </section>
 
-        <section class="slide" data-slide="15">
+        <section class="slide" data-slide="17">
           <div class="frame">
             <div class="eyebrow accent-bolt">Act 3 / 31 to 90</div>
-            <div class="slide-index">15 / 16</div>
+            <div class="slide-index">17 / 18</div>
           </div>
           <div class="content fade">
             <div class="section-rule rule-bolt"></div>
@@ -1273,18 +1555,33 @@
             <div class="metrics-grid" style="margin-top: 24px">
               <div class="panel metric-card">
                 <div class="stage-tag">What I want live</div>
-                <div class="metric-value accent-bolt">A clean campaign system</div>
-                <p>Proof asset, conversion path, routing, follow-up, and reporting tied together.</p>
+                <div class="metric-value accent-bolt">
+                  A clean campaign system
+                </div>
+                <p>
+                  Proof asset, conversion path, routing, follow-up, and
+                  reporting tied together.
+                </p>
               </div>
               <div class="panel metric-card">
                 <div class="stage-tag">What I want visible</div>
-                <div class="metric-value accent-bolt">Trusted pipeline signal</div>
-                <p>Marketing-sourced pipeline, positive reply rate, and conversion quality by segment.</p>
+                <div class="metric-value accent-bolt">
+                  Trusted pipeline signal
+                </div>
+                <p>
+                  Marketing-sourced pipeline, positive reply rate, and
+                  conversion quality by segment.
+                </p>
               </div>
               <div class="panel metric-card">
                 <div class="stage-tag">What I want documented</div>
-                <div class="metric-value accent-bolt">A repeatable playbook</div>
-                <p>Something Sales, Product, and leadership can all recognize as the first durable loop.</p>
+                <div class="metric-value accent-bolt">
+                  A repeatable playbook
+                </div>
+                <p>
+                  Something Sales, Product, and leadership can all recognize as
+                  the first durable loop.
+                </p>
               </div>
             </div>
             <div class="panel" style="margin-top: 18px">
@@ -1297,19 +1594,23 @@
             </div>
           </div>
           <div class="footer">
-            <div class="footer-note">This is disciplined enough to be credible and ambitious enough to matter.</div>
+            <div class="footer-note">
+              This is disciplined enough to be credible and ambitious enough to
+              matter.
+            </div>
           </div>
         </section>
 
-        <section class="slide" data-slide="16">
+        <section class="slide" data-slide="18">
           <div class="frame">
             <div class="eyebrow">Close</div>
-            <div class="slide-index">16 / 16</div>
+            <div class="slide-index">18 / 18</div>
           </div>
           <div class="content content-center fade">
             <div class="section-rule rule-bolt"></div>
             <h1 style="max-width: 13ch">
-              I know how to do this work because I have already done the hard parts twice.
+              I know how to do this work because I have already done the hard
+              parts twice.
             </h1>
             <p class="lede">
               DocSmith taught me how to find the story. OfferUp taught me how to
@@ -1319,7 +1620,9 @@
             <div class="three-up" style="margin-top: 26px">
               <div class="panel tight">
                 <div class="micro">What I would bring</div>
-                <h3 style="margin-top: 10px">Judgment on the real bottleneck</h3>
+                <h3 style="margin-top: 10px">
+                  Judgment on the real bottleneck
+                </h3>
               </div>
               <div class="panel tight">
                 <div class="micro">What I would build</div>
@@ -1327,7 +1630,9 @@
               </div>
               <div class="panel tight">
                 <div class="micro">What I would want to prove</div>
-                <h3 style="margin-top: 10px">Repeatable pipeline, not presentation theater</h3>
+                <h3 style="margin-top: 10px">
+                  Repeatable pipeline, not presentation theater
+                </h3>
               </div>
             </div>
             <p class="appendix-note">
@@ -1348,7 +1653,9 @@
 
       <nav class="nav" aria-label="Presentation navigation">
         <div class="dots" id="dots"></div>
-        <div class="nav-count"><span id="current">1</span> / <span id="total">16</span></div>
+        <div class="nav-count">
+          <span id="current">1</span> / <span id="total">16</span>
+        </div>
         <div class="controls">
           <button id="prev" aria-label="Previous slide">&larr;</button>
           <button id="next" aria-label="Next slide">&rarr;</button>
@@ -1375,7 +1682,8 @@
       });
 
       function go(nextIndex) {
-        if (nextIndex < 0 || nextIndex >= total || nextIndex === current) return;
+        if (nextIndex < 0 || nextIndex >= total || nextIndex === current)
+          return;
         slides[current].classList.remove("active");
         dotsRoot.children[current].classList.remove("active");
         current = nextIndex;
@@ -1384,8 +1692,12 @@
         currentEl.textContent = String(current + 1);
       }
 
-      document.getElementById("prev").addEventListener("click", () => go(current - 1));
-      document.getElementById("next").addEventListener("click", () => go(current + 1));
+      document
+        .getElementById("prev")
+        .addEventListener("click", () => go(current - 1));
+      document
+        .getElementById("next")
+        .addEventListener("click", () => go(current + 1));
 
       document.addEventListener("keydown", (event) => {
         if (event.key === "ArrowRight" || event.key === " ") {
