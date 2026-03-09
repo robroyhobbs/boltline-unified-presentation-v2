@@ -54,7 +54,11 @@
       }
 
       body {
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        font-family:
+          "Inter",
+          -apple-system,
+          BlinkMacSystemFont,
+          sans-serif;
         background: var(--bg);
         color: var(--text);
         line-height: 1.6;
@@ -333,16 +337,29 @@
         margin-bottom: 16px;
       }
 
-      .pain-point {
-        font-size: 13px;
-        color: var(--text-muted);
-        padding-top: 16px;
-        border-top: 1px solid var(--border);
+      .card-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .card-list li {
+        font-size: 14px;
+        color: var(--text-light);
+        padding: 4px 0 4px 16px;
+        position: relative;
         line-height: 1.5;
       }
 
-      .pain-point strong {
-        color: var(--text);
+      .card-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 11px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: var(--border-strong);
       }
 
       /* ========================================
@@ -645,12 +662,19 @@
           <div>
             <div class="proposed-marker">Proposed page</div>
             <h1>Hardware, handled&mdash;for space and defense teams.</h1>
-            <p>
-              Boltline coordinates your parts, people, and processes from design
-              through deployment. Built inside Stoke Space to manage rocket-grade
-              complexity. Now used by teams building lunar landers, defense
-              systems, and mission-critical hardware.
-            </p>
+            <ul class="card-list" style="margin-bottom: 32px; max-width: 480px">
+              <li>
+                Coordinates parts, people, and processes from design through
+                deployment
+              </li>
+              <li>
+                Built inside Stoke Space to manage rocket-grade complexity
+              </li>
+              <li>
+                Now used by teams building lunar landers, defense systems, and
+                mission-critical hardware
+              </li>
+            </ul>
             <div class="hero-actions">
               <a href="#" class="btn btn-dark">Book a Demo</a>
               <a href="#" class="btn btn-outline">See the Product</a>
@@ -671,12 +695,16 @@
               <div class="proof-stat">
                 <div class="proof-stat-label">Deployment</div>
                 <div class="proof-stat-value">Days</div>
-                <div class="proof-stat-source">not quarters — no on-prem required</div>
+                <div class="proof-stat-source">
+                  not quarters — no on-prem required
+                </div>
               </div>
               <div class="proof-stat">
                 <div class="proof-stat-label">Compliance</div>
                 <div class="proof-stat-value">ITAR</div>
-                <div class="proof-stat-source">compliant cloud infrastructure</div>
+                <div class="proof-stat-source">
+                  compliant cloud infrastructure
+                </div>
               </div>
             </div>
           </div>
@@ -694,66 +722,67 @@
           What space and defense teams use Boltline for
         </h2>
         <p class="section-desc">
-          From the boltline.com use cases page, space and defense teams need
-          security, traceability, and audit-readiness for mission-critical
-          systems. These are the specific operational problems Boltline solves.
+          Security, traceability, and audit-readiness for mission-critical
+          systems.
         </p>
 
         <div class="use-case-grid">
           <div class="use-case-card">
             <div class="use-case-num">01</div>
             <h3>Design-to-build traceability</h3>
-            <p>
-              Track every part from engineering BOM through manufacturing BOM to
-              as-built configuration. Boltline manages eBOM and aBOM with full
-              revision history and part relationships.
-            </p>
-            <div class="pain-point">
-              <strong>Replaces:</strong> Spreadsheet BOMs that don't propagate
-              engineering changes. Manual reconciliation before audits.
-            </div>
+            <ul class="card-list">
+              <li>
+                Track every part from eBOM through mBOM to as-built
+                configuration
+              </li>
+              <li>Full revision history and part relationships</li>
+              <li>
+                Changes propagate automatically — no manual reconciliation
+              </li>
+            </ul>
           </div>
 
           <div class="use-case-card">
             <div class="use-case-num">02</div>
             <h3>Configuration management</h3>
-            <p>
-              Capture as-designed, as-built, and as-maintained states. Boltline's
-              logical designators link system models to installed hardware with
-              calibration values, serial numbers, and sensor/actuator mapping.
-            </p>
-            <div class="pain-point">
-              <strong>Replaces:</strong> Configuration data scattered across
-              disconnected tools with no single view of what's installed.
-            </div>
+            <ul class="card-list">
+              <li>Capture as-designed, as-built, and as-maintained states</li>
+              <li>
+                Logical designators link system models to installed hardware
+              </li>
+              <li>
+                Calibration values, serial numbers, and sensor/actuator mapping
+              </li>
+            </ul>
           </div>
 
           <div class="use-case-card">
             <div class="use-case-num">03</div>
             <h3>Compliance and audit readiness</h3>
-            <p>
-              ITAR-compliant cloud. Complete digital thread from purchase order
-              to installed part. Full revision history and as-built records
-              generated automatically — not reconstructed manually.
-            </p>
-            <div class="pain-point">
-              <strong>Replaces:</strong> Weeks of manual data gathering before
-              customer or government audits. Paper trails that don't connect.
-            </div>
+            <ul class="card-list">
+              <li>ITAR-compliant cloud infrastructure</li>
+              <li>
+                Complete digital thread from purchase order to installed part
+              </li>
+              <li>
+                As-built records generated automatically — not reconstructed for
+                audits
+              </li>
+            </ul>
           </div>
 
           <div class="use-case-card">
             <div class="use-case-num">04</div>
             <h3>Build execution across sites</h3>
-            <p>
-              Digital work plans replace paper travelers. App-like experience
-              with instructions, images, checklists, and triggered workflows.
-              No-code automation standardizes execution across locations.
-            </p>
-            <div class="pain-point">
-              <strong>Replaces:</strong> Paper-based processes, tribal knowledge
-              that stays at one location, inconsistent quality across shifts.
-            </div>
+            <ul class="card-list">
+              <li>Digital work plans replace paper travelers</li>
+              <li>
+                App-like experience with instructions, images, and checklists
+              </li>
+              <li>
+                No-code automation standardizes execution across locations
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -765,13 +794,10 @@
     <section class="section">
       <div class="container">
         <div class="section-eyebrow">How it works</div>
-        <h2 class="section-title">
-          Design, build, test, trace, improve
-        </h2>
+        <h2 class="section-title">Design, build, test, trace, improve</h2>
         <p class="section-desc">
-          Boltline's product covers the full hardware lifecycle in five stages.
-          These are the actual modules from boltline.com/product, mapped to
-          the space and defense workflow.
+          Five stages covering the full hardware lifecycle — mapped to space and
+          defense workflows.
         </p>
 
         <div class="workflow-steps">
@@ -779,11 +805,11 @@
             <div class="step-num">01</div>
             <div class="step-content">
               <h3>Design</h3>
-              <p>
-                Design with CAD, sketches, or existing parts. Build engineering
-                BOMs with component relationships, revisions, and a searchable
-                parts library.
-              </p>
+              <ul class="card-list">
+                <li>Import from CAD, sketches, or existing parts</li>
+                <li>Build eBOMs with component relationships and revisions</li>
+                <li>Searchable parts library across projects</li>
+              </ul>
               <div class="step-modules">
                 <span class="module-tag">Parts Library</span>
                 <span class="module-tag">eBOM</span>
@@ -795,11 +821,14 @@
             <div class="step-num">02</div>
             <div class="step-content">
               <h3>Build</h3>
-              <p>
-                Manufacture and assemble with digital work plans — app-like
-                procedures with instructions, images, and checklists. No-code
-                workflows standardize shop orders across locations.
-              </p>
+              <ul class="card-list">
+                <li>
+                  Digital work plans with instructions, images, and checklists
+                </li>
+                <li>
+                  No-code workflows standardize execution across locations
+                </li>
+              </ul>
               <div class="step-modules">
                 <span class="module-tag">Work Plans</span>
                 <span class="module-tag">Workflows</span>
@@ -811,11 +840,13 @@
             <div class="step-num">03</div>
             <div class="step-content">
               <h3>Test</h3>
-              <p>
-                Confirm what works and what doesn't. QR-code scanning records
-                each part installation and test result in real time. Nonconformance
-                management tracks issues.
-              </p>
+              <ul class="card-list">
+                <li>
+                  QR-code scanning records installations and test results in
+                  real time
+                </li>
+                <li>Nonconformance management tracks issues to resolution</li>
+              </ul>
               <div class="step-modules">
                 <span class="module-tag">QR Scanning</span>
                 <span class="module-tag">Inventory</span>
@@ -827,11 +858,13 @@
             <div class="step-num">04</div>
             <div class="step-content">
               <h3>Trace</h3>
-              <p>
-                Formalize parts, assemblies, and final products. As-built BOMs
-                with full configuration state — calibration values, serial numbers,
-                installation locations, and parent/child traceability.
-              </p>
+              <ul class="card-list">
+                <li>As-built BOMs with full configuration state</li>
+                <li>
+                  Calibration values, serial numbers, installation locations
+                </li>
+                <li>Parent/child traceability across assemblies</li>
+              </ul>
               <div class="step-modules">
                 <span class="module-tag">Configuration Management</span>
                 <span class="module-tag">aBOM</span>
@@ -843,11 +876,13 @@
             <div class="step-num">05</div>
             <div class="step-content">
               <h3>Improve</h3>
-              <p>
-                Refine products before, during, or after delivery. Complete
-                digital thread from order to installation enables continuous
-                iteration without losing traceability.
-              </p>
+              <ul class="card-list">
+                <li>Refine products before, during, or after delivery</li>
+                <li>
+                  Complete digital thread enables iteration without losing
+                  traceability
+                </li>
+              </ul>
               <div class="step-modules">
                 <span class="module-tag">Supply Chain</span>
                 <span class="module-tag">ERP Integration</span>
@@ -857,41 +892,37 @@
         </div>
 
         <!-- Who this serves -->
-        <div class="section-eyebrow" style="margin-top: 64px;">By role</div>
-        <h2 class="section-title">
-          Who this matters to
-        </h2>
-        <p class="section-desc">
-          Based on Boltline's buyer personas — the specific pain and value
-          framing for each role in a space and defense organization.
-        </p>
+        <div class="section-eyebrow" style="margin-top: 64px">By role</div>
+        <h2 class="section-title">Who this matters to</h2>
+        <p class="section-desc">Pain and value framing for each buying role.</p>
 
         <div class="persona-grid">
           <div class="persona-card">
             <div class="persona-role">VP of Engineering / CTO</div>
             <h4>"We've tried PLM before and it was a nightmare."</h4>
-            <p>
-              Single source of truth from design through production. Deploys in
-              days, not quarters. Built by rocket engineers who couldn't wait
-              either.
-            </p>
+            <ul class="card-list">
+              <li>Single source of truth from design through production</li>
+              <li>Deploys in days, not quarters</li>
+              <li>Built by rocket engineers who couldn't wait either</li>
+            </ul>
           </div>
           <div class="persona-card">
             <div class="persona-role">Manufacturing / Ops Lead</div>
             <h4>"My team won't adopt another tool."</h4>
-            <p>
-              App-like experience your team actually uses. Digital work plans
-              replace paper travelers. Consistent execution across shifts and
-              locations.
-            </p>
+            <ul class="card-list">
+              <li>App-like experience your team actually uses</li>
+              <li>Digital work plans replace paper travelers</li>
+              <li>Consistent execution across shifts and locations</li>
+            </ul>
           </div>
           <div class="persona-card">
             <div class="persona-role">Quality / Compliance</div>
             <h4>"Audit prep takes weeks of manual data gathering."</h4>
-            <p>
-              ITAR-compliant cloud. Full as-built configuration history.
-              Push-button traceability from purchase order to installed part.
-            </p>
+            <ul class="card-list">
+              <li>ITAR-compliant cloud infrastructure</li>
+              <li>Full as-built configuration history</li>
+              <li>Push-button traceability from PO to installed part</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -903,24 +934,22 @@
     <section class="section">
       <div class="container">
         <div class="section-eyebrow">Customer proof</div>
-        <h2 class="section-title">
-          Used by teams building for space
-        </h2>
+        <h2 class="section-title">Used by teams building for space</h2>
         <p class="section-desc">
-          Boltline lists seven customers on boltline.com. Two are space and
-          defense companies with published outcomes.
+          Two space and defense customers with published outcomes.
         </p>
 
         <div class="proof-cards">
           <div class="customer-card">
             <div class="customer-name">Intuitive Machines</div>
             <div class="customer-type">Lunar lander systems</div>
-            <p class="customer-detail">
-              Listed as a Boltline customer on the homepage. Builds and operates
-              lunar landers for NASA's CLPS program. Uses Boltline to coordinate
-              engineering, manufacturing, and supply chain across complex
-              hardware assemblies.
-            </p>
+            <ul class="card-list" style="margin-bottom: 20px">
+              <li>Builds and operates lunar landers for NASA's CLPS program</li>
+              <li>
+                Coordinates engineering, manufacturing, and supply chain in
+                Boltline
+              </li>
+            </ul>
             <div class="customer-stats">
               <div>
                 <div class="customer-stat-value">$6M</div>
@@ -933,27 +962,39 @@
           <div class="customer-card">
             <div class="customer-name">ispace-US</div>
             <div class="customer-type">Lunar exploration hardware</div>
-            <p class="customer-detail">
-              Listed as a Boltline customer on the homepage. Builds lunar lander
-              hardware. Uses Boltline's inventory and configuration management
-              with QR-based real-time tracking across complex assemblies.
-            </p>
+            <ul class="card-list" style="margin-bottom: 20px">
+              <li>Builds lunar lander hardware for commercial exploration</li>
+              <li>
+                Uses Boltline for inventory and configuration management with
+                QR-based tracking
+              </li>
+            </ul>
             <div class="customer-stats">
               <div>
                 <div class="customer-stat-value">99.9%</div>
-                <div class="customer-stat-label">inventory accuracy (claimed)</div>
+                <div class="customer-stat-label">
+                  inventory accuracy (claimed)
+                </div>
               </div>
             </div>
             <p class="source-note">Source: boltline.com customer claims</p>
           </div>
         </div>
 
-        <div style="margin-top: 32px; padding: 24px; background: var(--bg-soft); border-radius: var(--radius);">
-          <p style="font-size: 14px; color: var(--text-light); line-height: 1.6;">
-            <strong style="color: var(--text);">Other listed customers:</strong>
+        <div
+          style="
+            margin-top: 32px;
+            padding: 24px;
+            background: var(--bg-soft);
+            border-radius: var(--radius);
+          "
+        >
+          <p
+            style="font-size: 14px; color: var(--text-light); line-height: 1.6"
+          >
+            <strong style="color: var(--text)">Also using Boltline:</strong>
             True Anomaly, XCIMER, The Lumber Manufactory, Seabound, and Stoke
-            Space (where Boltline was originally built). Published case study
-            detail for these companies would strengthen this page significantly.
+            Space (where Boltline was originally built).
           </p>
         </div>
       </div>
@@ -965,29 +1006,28 @@
         <div class="proposed-marker">Proposed conversion architecture</div>
         <h2>See Boltline for space and defense</h2>
         <p>
-          Book a demo to see how Boltline handles the traceability, configuration,
-          and compliance requirements your team needs.
+          See how Boltline handles traceability, configuration, and compliance
+          for your team.
         </p>
         <div class="cta-actions">
           <a href="#" class="btn btn-dark">Book a Demo</a>
           <a href="#" class="btn btn-outline">Download Space & Defense Brief</a>
         </div>
-        <p style="font-size: 13px; color: var(--text-muted); margin-top: 16px;">
-          The second CTA is intentionally different from "Book a Demo" —
-          an intent-tiered offer for buyers not ready for a sales conversation.
-        </p>
       </div>
     </section>
 
     <footer class="footer">
       <div class="container">
-        <p>&copy; 2026 Boltline, Inc. &middot; ITAR Compliant &middot; Cloud-Native</p>
+        <p>
+          &copy; 2026 Boltline, Inc. &middot; ITAR Compliant &middot;
+          Cloud-Native
+        </p>
       </div>
     </footer>
 
     <div class="interview-badge">
-      <strong>Interview concept</strong> &middot; Matt McKinney &middot;
-      All content sourced from boltline.com
+      <strong>Interview concept</strong> &middot; Matt McKinney &middot; All
+      content sourced from boltline.com
     </div>
   </body>
 </html>
